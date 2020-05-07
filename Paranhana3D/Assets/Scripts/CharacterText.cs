@@ -6,7 +6,7 @@ public class CharacterText : MonoBehaviour {
 
     public string[] texts;
 
-    public enum ItemGiven { None, Axe};
+    public enum ItemGiven { None, Machado};
 
     public ItemGiven _item;
 

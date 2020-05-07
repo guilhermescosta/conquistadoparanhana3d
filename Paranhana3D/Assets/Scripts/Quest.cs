@@ -2,25 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quest : MonoBehaviour {
+[System.Serializable]
+public class Quest
+{
+    public string titulo;
+    [TextArea]
+    public string descricao;
+    public bool estaAtivo;
+    public float dinheiroRecompensa;
+    public GameObject itemRecompensa;
 
-    public string questName;
-    public string questDescription;
+    public QuestGoal objetivo;
 
-
-
-    
-
-
-    void Start()
+    public void Complete()
     {
-            
+        estaAtivo = false;
+        Debug.Log(titulo + " Completa !");
     }
-
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 
 }

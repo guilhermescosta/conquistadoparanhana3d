@@ -61,26 +61,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\River.cs" />
     <Compile Include="Assets\Scripts\CharacterText.cs" />
     <Compile Include="Assets\Scripts\DayLight.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventoryGUI.cs" />
+    <Compile Include="Assets\Scripts\Old\Old_CompassController.cs" />
+    <Compile Include="Assets\Scripts\Old\Old_QuestButton.cs" />
+    <Compile Include="Assets\Scripts\Old\Old_QuestEvent.cs" />
+    <Compile Include="Assets\Scripts\Old\Old_QuestLocation.cs" />
+    <Compile Include="Assets\Scripts\Old\Old_QuestManager.cs" />
+    <Compile Include="Assets\Scripts\Old\Old_QuestPath.cs" />
+    <Compile Include="Assets\Scripts\Old\Quest.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Quest.cs" />
+    <Compile Include="Assets\Scripts\QuestGiver.cs" />
+    <Compile Include="Assets\Scripts\QuestGoal.cs" />
     <Compile Include="Assets\Scripts\Rain.cs" />
+    <Compile Include="Assets\Scripts\River.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/guilh/Desktop/Paranhana3D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/guilh/Documents/GitHub/conquistadoparanhana3d/Paranhana3D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/guilh/Desktop/Paranhana3D/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/guilh/Documents/GitHub/conquistadoparanhana3d/Paranhana3D/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/guilh/Desktop/Paranhana3D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/guilh/Documents/GitHub/conquistadoparanhana3d/Paranhana3D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/guilh/Desktop/Paranhana3D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/guilh/Documents/GitHub/conquistadoparanhana3d/Paranhana3D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/guilh/Desktop/Paranhana3D/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/guilh/Documents/GitHub/conquistadoparanhana3d/Paranhana3D/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -284,13 +295,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.7f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/guilh/Desktop/Paranhana3D/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/guilh/Documents/GitHub/conquistadoparanhana3d/Paranhana3D/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/guilh/Desktop/Paranhana3D/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/guilh/Documents/GitHub/conquistadoparanhana3d/Paranhana3D/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/guilh/Desktop/Paranhana3D/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/guilh/Documents/GitHub/conquistadoparanhana3d/Paranhana3D/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

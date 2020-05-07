@@ -9,29 +9,29 @@ public class Player : MonoBehaviour {
     public GameObject _icon_text;
     public GameObject _charInteraction;
 
+    //public Inventory _inventory;
+    Inventory _inventory = new Inventory();
+
     public int _textIndex;
     public int _index;
 
-    public int totalWood;
+    
     public bool onTree;
 
-    public bool hasAxe;
-    public GameObject _tree;
-
+    public GameObject _arvore;
     public Rigidbody rb;
-
     public GameObject textBackground;
     public Text _chatText;
 
 
-
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         _index = 0;
         canWalk = true;
 
         rb = this.GetComponent<Rigidbody>();
+
+       
     }
 	
 	// Update is called once per frame
@@ -89,18 +89,18 @@ public class Player : MonoBehaviour {
                 {
                     canWalk = true;
 
-                    if (_charInteraction.GetComponent<CharacterText>()._item == CharacterText.ItemGiven.Axe)
+                    if (_charInteraction.GetComponent<CharacterText>()._item == CharacterText.ItemGiven.Machado)
                     {
-                         hasAxe = true;
+                         _inventory.temMachado = true;
                     }
                 }
             }
         }
 
-        if (onTree && hasAxe) {
+        if (onTree && _inventory.temMachado) {
             if (Input.GetKeyDown(KeyCode.Space)){
-                totalWood += 10;
-                _tree.GetComponent<MeshRenderer>().enabled = false;
+                _inventory.madeira += 10;
+                _arvore.GetComponent<MeshRenderer>().enabled = false;
 
             }
         }
@@ -136,7 +136,7 @@ public class Player : MonoBehaviour {
         if (collision.gameObject.CompareTag("tree"))
         {
             onTree = true;
-            _tree = collision.gameObject;
+            _arvore = collision.gameObject;
         }
     }
 
@@ -145,7 +145,7 @@ public class Player : MonoBehaviour {
         if (collision.gameObject.CompareTag("tree"))
         {
             onTree = false;
-            _tree = null;
+            _arvore = null;
         }
     }
 

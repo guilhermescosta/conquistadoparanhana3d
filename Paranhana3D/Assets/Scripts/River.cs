@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class River : MonoBehaviour {
 
-    float scrollSpeed = 0.5f;
+    float scrollSpeed = 0.1f;
     Renderer rend;
 
     // Use this for initialization
