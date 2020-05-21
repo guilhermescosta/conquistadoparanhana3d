@@ -66,13 +66,14 @@
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryGUI.cs" />
     <Compile Include="Assets\Scripts\Old\Old_CompassController.cs" />
+    <Compile Include="Assets\Scripts\Old\Old_Quest.cs" />
     <Compile Include="Assets\Scripts\Old\Old_QuestButton.cs" />
     <Compile Include="Assets\Scripts\Old\Old_QuestEvent.cs" />
     <Compile Include="Assets\Scripts\Old\Old_QuestLocation.cs" />
     <Compile Include="Assets\Scripts\Old\Old_QuestManager.cs" />
     <Compile Include="Assets\Scripts\Old\Old_QuestPath.cs" />
-    <Compile Include="Assets\Scripts\Old\Quest.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Plow.cs" />
     <Compile Include="Assets\Scripts\Quest.cs" />
     <Compile Include="Assets\Scripts\QuestGiver.cs" />
     <Compile Include="Assets\Scripts\QuestGoal.cs" />

@@ -9,14 +9,19 @@ public class Player : MonoBehaviour {
     public GameObject _icon_text;
     public GameObject _charInteraction;
 
-    //public Inventory _inventory;
-    Inventory _inventory = new Inventory();
+    public Inventory _inventory = new Inventory();
 
     public int _textIndex;
     public int _index;
 
     
     public bool onTree;
+
+    
+    public bool isArable;
+    public bool isPlough;
+    GameObject groundObject;
+   
 
     public GameObject _arvore;
     public Rigidbody rb;
@@ -68,6 +73,8 @@ public class Player : MonoBehaviour {
             }
         }
 
+
+        // Falar com personagens
         if (_icon_text.activeSelf==true) {
 
             if (Input.GetKeyDown(KeyCode.Space))
@@ -97,6 +104,8 @@ public class Player : MonoBehaviour {
             }
         }
 
+
+        // Cortar Arvore
         if (onTree && _inventory.temMachado) {
             if (Input.GetKeyDown(KeyCode.Space)){
                 _inventory.madeira += 10;
@@ -104,6 +113,17 @@ public class Player : MonoBehaviour {
 
             }
         }
+
+        // Arar Terra
+        
+        if (isArable ){    //&& _inventory.temPa
+            if (Input.GetKeyDown(KeyCode.Space)){
+                groundObject.GetComponent<MeshRenderer>().material = groundObject.GetComponent<Plow>().materialPlow;
+
+            }
+        }
+
+
 
     }
 
@@ -138,6 +158,12 @@ public class Player : MonoBehaviour {
             onTree = true;
             _arvore = collision.gameObject;
         }
+
+        if (collision.gameObject.CompareTag("arable"))
+        {
+            isArable = true;
+            groundObject = collision.gameObject;
+        }
     }
 
     private void OnCollisionExit(Collision collision)
@@ -147,6 +173,19 @@ public class Player : MonoBehaviour {
             onTree = false;
             _arvore = null;
         }
+
+        if (collision.gameObject.CompareTag("arable"))
+        {
+            isArable = false;
+            groundObject = null;
+        }
+    }
+
+  
+
+    public void Arar()
+    {
+
     }
 
 }
